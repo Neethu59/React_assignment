@@ -69,9 +69,9 @@ export default function Work({value}) {
 
    
     <div className='d-flex  justify-content-center mt-5'>
-    <button type="button" class="btn btn-dark mr-2">{hours.toString().padStart(2, '0')}</button>
-    <button type="button" class="btn btn-dark mr-2">{minutes.toString().padStart(2, '0')}</button>
-    <button type="button" class="btn btn-dark">{seconds.toString().padStart(2, '0')}</button>
+    <button type="button" class="btn btn-dark mr-2 p-3">{hours.toString().padStart(2, '0')}</button>
+    <button type="button" class="btn btn-dark mr-2 p-3">{minutes.toString().padStart(2, '0')}</button>
+    <button type="button" class="btn btn-dark p-3">{seconds.toString().padStart(2, '0')}</button>
     </div>
     <div className='d-flex justify-content-center mt-2'>
       {state===true?
