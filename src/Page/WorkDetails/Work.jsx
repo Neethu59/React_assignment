@@ -5,7 +5,10 @@ import {Stop} from '@mui/icons-material/';
 
 import { useState } from 'react';
 import { useEffect } from 'react';
+// import sample from '../sample';
 import './Work.css'
+import Sample from '../Sample';
+
 export default function Work({value}) {
     const [state,setState]=useState(false)
     const [startTime, setStartTime] = useState(null);
@@ -59,6 +62,12 @@ export default function Work({value}) {
       clearInterval(timerIntervalId);
       setState(true)
        };
+
+
+       const workdata=(data)=>{
+        console.log(data);
+       }
+
   return (
     <>
     <section className="vh-100 bg-image" style={{"backgroundImage": "url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp')"}}>
@@ -83,26 +92,10 @@ export default function Work({value}) {
 
 <center><h3 className='mt-5'>{value}</h3></center>
       <div className="row align-items-center mt-5"> {/* Added align-items-center class here */}
-        <div className="col-md-6 mb-4 ">
-          <div className="card">
-          <div className="card-header">
-        <h3 className='text-center'>Total hours worked this week</h3>
-         </div>
-            <div className="card-body p-5">
-              <h3 className="text-uppercase text-center mb-5">7 Hours</h3>
-            </div>
-          </div>
-        </div>
-        <div className="col-md-6 mb-4 ">
-          <div className="card">
-          <div className="card-header">
-        <h3 className='text-center'>Total hours worked this month</h3>
-         </div>
-            <div className="card-body p-5">
-              <h3 className="text-uppercase text-center mb-5">35 Hours</h3>
-            </div>
-          </div>
-        </div>
+        
+        <Sample title="Total hours worked this week" houres='7houres'/>
+       
+        <Sample title="Total hours worked this month" houres='35 houres'/>
       </div>
     </div>
   </div>

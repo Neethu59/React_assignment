@@ -17,6 +17,8 @@ function App() {
     <Routes>
       <Route path="/" element={<User handlename={handlename}/>}></Route>
       <Route path="/work" element={<Work value={value}/>}></Route>
+      {/* <Route path="/sample" element={<sample/>}></Route> */}
+    
       </Routes>
       </BrowserRouter>
   );
